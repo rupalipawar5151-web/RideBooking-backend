@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 36px;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+/* ===== Home page nav buttons ===== */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    background: #1a1a1a;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.nav-links a:hover {
+    background: #333;
+}
+
+/* ===== Forms ===== */
+.form-group {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1a1a1a;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #06C167;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #05a457;
+}
+
+/* ===== Messages ===== */
+.message {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.success {
+    background: #e6f7ee;
+    color: #06864a;
+    border: 1px solid #b8ebd1;
+}
+
+.error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6c1;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+/* ===== Wide container (drivers list, ride history, etc.) ===== */
+.container-wide {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    width: 90%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #1a1a1a;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f7f7f7;
+}
+
+/* ===== Status badges ===== */
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.badge-available {
+    background: #e6f7ee;
+    color: #06864a;
+}
+
+.badge-busy {
+    background: #fdecea;
+    color: #c0392b;
+}
+
+/* ===== Fare display card ===== */
+.card-fare {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 16px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.card-fare .amount {
+    font-size: 34px;
+    font-weight: 800;
+    color: #06C167;
+}
+
+/* ===== Small action buttons (used in tables) ===== */
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: auto;
+    margin: 0 4px 0 0;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.btn-danger {
+    background: #e74c3c;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}

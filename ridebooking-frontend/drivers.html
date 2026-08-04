@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Drivers - RideEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-wide">
+        <h1>🚕 Manage Drivers</h1>
+        <p class="subtitle">Add and manage drivers</p>
+
+        <!-- ===== Add Driver Form ===== -->
+        <form id="addDriverForm">
+            <div class="form-group">
+                <label>Driver Name</label>
+                <input type="text" id="driverName" placeholder="Enter driver name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" id="phone" placeholder="10 digit phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Number</label>
+                <input type="text" id="vehicleNumber" placeholder="e.g. MH12AB1234" required>
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Type</label>
+                <input type="text" id="vehicleType" placeholder="e.g. Sedan, Hatchback" required>
+            </div>
+
+            <button type="submit">Add Driver</button>
+        </form>
+
+        <div id="responseMessage"></div>
+
+        <!-- ===== Drivers Table ===== -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Vehicle</th>
+                    <th>Status</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="driversTableBody">
+                
+            </tbody>
+        </table>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="drivers.js"></script>
+</body>
+</html>
